@@ -45,4 +45,4 @@ This is what has worked for me, YMMV.
 
 ## Sparkles in the image
 
-There are a few things to try. First if the sparkling is extreme, try swapping the Denise/Super Denise jumper to the opposite setting, this changes the clock used for the RGB timing. Then you can try a 47pF capacitor in C7 and using 74VHC ICs insteadl of 74LVC.
+There are a few things to try. First if the sparkling is extreme, try swapping the Denise/Super Denise jumper to the opposite setting, this changes the clock used for the RGB timing. Then you can try a 47pF capacitor in C6 and using 74VHC ICs insteadl of 74LVC.
