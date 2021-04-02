@@ -38,6 +38,14 @@ This is what has worked for me, YMMV.
  - Use TI 74LVC ICs (Toshiba 74VHC for U1 has also been tested with this design and appear to work)
  - Use a regulator that is rated for 300mA or higher (I use NCP161 regulators in my builds)
 
+### Recommended ordering
+
+If you are ordering from JLCPCB I recommend the following:
+
+ - Surface Finish: ENIG
+ - Gold Fingers: Yes
+ - 45° finger chamfered: yes
+
 ## Installation notes
 
 - Set the Denise jumper according to which Denise is in your Amiga (Super Denise for 8373, Denise for 8362)
@@ -45,4 +53,4 @@ This is what has worked for me, YMMV.
 
 ## Sparkles in the image
 
-There are a few things to try. First if the sparkling is extreme, try swapping the Denise/Super Denise jumper to the opposite setting, this changes the clock used for the RGB timing. Then you can try a 47pF capacitor in C6 and using 74VHC ICs insteadl of 74LVC.
+There are a few things to try. First if the sparkling is extreme, try swapping the Denise/Super Denise jumper to the opposite setting, this changes the clock used for the RGB timing. Then you can try a 47pF capacitor in C6 and using 74VHC ICs instead of 74LVC.
