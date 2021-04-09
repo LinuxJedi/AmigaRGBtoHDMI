@@ -29,3 +29,9 @@ I'm currently working on a CPLD variable for the Amiga 2000 video slot and Amiga
 ## Software
 
 The software used for this project can be found at https://github.com/hoglet67/RGBtoHDMI/
+
+## Ready Built Boards
+
+If you want a ready built board for either design please contact andrew@linuxjedi.co.uk and I can put you in touch with whoever is building / selling at a reasonable price.
+
+Likewise if you are a someone selling these designs, please let me know if you want me to put you in touch with buyers who contact me.
