@@ -35,3 +35,7 @@ The software used for this project can be found at https://github.com/hoglet67/R
 If you want a ready built board for either design please contact andrew@linuxjedi.co.uk and I can put you in touch with whoever is building / selling at a reasonable price.
 
 Likewise if you are a someone selling these designs, please let me know if you want me to put you in touch with buyers who contact me.
+
+## Sponsorship
+
+If you like these projects and have built / sold a few yourself, please consider sponsoring. R&D for these projects isn't cheap and the sponsorship money goes into more designs for the future. Links for this are can be found in the "Sponsor" button at the top of the GitHub page for this project.
