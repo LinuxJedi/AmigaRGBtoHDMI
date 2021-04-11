@@ -16,6 +16,14 @@ Amiga 500 CPLD variant that does not require a jumper and has no sparkling pixel
 
 ![Amiga 500 CPLD RGBtoHDMI](Amiga500CPLD/A500top.png)
 
+### Amiga2000CPLDSlot
+
+Amiga 2000 CPLD variant that does not require a jumper and has no sparkling pixel issues
+
+![Amiga 2000 CPLD Slot](Amiga2000CPLDSlot/videoslotadapter.png)
+
+**Currently untested**
+
 ## Other versions
 
 - c0pperdragon's - The excellent original c0pperdragon design can be found at: https://github.com/c0pperdragon/Amiga-Digital-Video/
@@ -24,7 +32,7 @@ Please add pull requests to link to your variants here.
 
 ## Future Variants
 
-I'm currently working on a CPLD variable for the Amiga 2000 video slot and Amiga 600. Watch this space!
+I'm currently working on a CPLD variable for the Amiga 600. Watch this space!
 
 ## Software
 
