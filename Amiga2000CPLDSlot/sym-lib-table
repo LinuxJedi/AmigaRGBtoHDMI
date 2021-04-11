@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name amiga-conn)(type Legacy)(uri ${KIPRJMOD}/amiga-conn.lib)(options "")(descr ""))
+  (lib (name videoslotadapter-cache)(type Legacy)(uri ${KIPRJMOD}/videoslotadapter-cache.lib)(options "")(descr ""))
+  (lib (name videoslotadapter-rescue)(type Legacy)(uri ${KIPRJMOD}/videoslotadapter-rescue.lib)(options "")(descr ""))
+  (lib (name XC9572VQ44)(type Legacy)(uri ${KIPRJMOD}/XC9572VQ44.lib)(options "")(descr ""))
+  (lib (name rgb2hdmi)(type Legacy)(uri /home/linuxjedi/Programming/Git/AmigaRGBtoHDMI/Amiga500CPLD/rgb2hdmi.lib)(options "")(descr ""))
+)
