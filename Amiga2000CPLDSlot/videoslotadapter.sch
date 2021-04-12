@@ -808,4 +808,124 @@ Text Label 8650 4450 2    50   ~ 0
 TCK
 Text Label 8650 4550 2    50   ~ 0
 TMS
+$Comp
+L Connector_Generic:Conn_01x02 JButton6
+U 1 1 607564A8
+P 9850 9800
+F 0 "JButton6" V 9723 9880 50  0000 L CNN
+F 1 "Conn_01x02" V 9814 9880 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 9850 9800 50  0001 C CNN
+F 3 "~" H 9850 9800 50  0001 C CNN
+	1    9850 9800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 607564AE
+P 9950 9400
+F 0 "#PWR0104" H 9950 9150 50  0001 C CNN
+F 1 "GND" V 9955 9272 50  0000 R CNN
+F 2 "" H 9950 9400 50  0001 C CNN
+F 3 "" H 9950 9400 50  0001 C CNN
+	1    9950 9400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9850 9600 9850 9400
+Wire Wire Line
+	9850 9400 9950 9400
+Wire Wire Line
+	9750 9600 9750 9200
+$Comp
+L Connector_Generic:Conn_01x02 JButton5
+U 1 1 607564B7
+P 9050 9800
+F 0 "JButton5" V 8923 9880 50  0000 L CNN
+F 1 "Conn_01x02" V 9014 9880 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 9050 9800 50  0001 C CNN
+F 3 "~" H 9050 9800 50  0001 C CNN
+	1    9050 9800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 607564BD
+P 9150 9450
+F 0 "#PWR0105" H 9150 9200 50  0001 C CNN
+F 1 "GND" V 9155 9322 50  0000 R CNN
+F 2 "" H 9150 9450 50  0001 C CNN
+F 3 "" H 9150 9450 50  0001 C CNN
+	1    9150 9450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9050 9450 9150 9450
+Wire Wire Line
+	9050 9600 9050 9450
+Wire Wire Line
+	8950 9200 8950 9600
+Text Label 9700 9200 0    50   ~ 0
+GPIO26
+Wire Wire Line
+	8950 9200 9750 9200
+$Comp
+L Connector_Generic:Conn_01x02 JButton4
+U 1 1 6075F333
+P 8700 8650
+F 0 "JButton4" V 8573 8730 50  0000 L CNN
+F 1 "Conn_01x02" V 8664 8730 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 8700 8650 50  0001 C CNN
+F 3 "~" H 8700 8650 50  0001 C CNN
+	1    8700 8650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 6075F339
+P 8800 8250
+F 0 "#PWR0106" H 8800 8000 50  0001 C CNN
+F 1 "GND" V 8805 8122 50  0000 R CNN
+F 2 "" H 8800 8250 50  0001 C CNN
+F 3 "" H 8800 8250 50  0001 C CNN
+	1    8800 8250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8700 8450 8700 8250
+Wire Wire Line
+	8700 8250 8800 8250
+Wire Wire Line
+	8600 8450 8600 8050
+$Comp
+L Connector_Generic:Conn_01x02 JButton3
+U 1 1 6075F342
+P 7900 8650
+F 0 "JButton3" V 7773 8730 50  0000 L CNN
+F 1 "Conn_01x02" V 7864 8730 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 7900 8650 50  0001 C CNN
+F 3 "~" H 7900 8650 50  0001 C CNN
+	1    7900 8650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 6075F348
+P 8000 8300
+F 0 "#PWR0107" H 8000 8050 50  0001 C CNN
+F 1 "GND" V 8005 8172 50  0000 R CNN
+F 2 "" H 8000 8300 50  0001 C CNN
+F 3 "" H 8000 8300 50  0001 C CNN
+	1    8000 8300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7900 8300 8000 8300
+Wire Wire Line
+	7900 8450 7900 8300
+Wire Wire Line
+	7800 8050 7800 8450
+Text Label 8550 8050 0    50   ~ 0
+GPIO19
+Wire Wire Line
+	7800 8050 8600 8050
 $EndSCHEMATC
