@@ -27,6 +27,7 @@ Amiga 2000 CPLD variant that does not require a jumper and has no sparkling pixe
 ## Other versions
 
 - c0pperdragon's - The excellent original c0pperdragon design can be found at: https://github.com/c0pperdragon/Amiga-Digital-Video/
+- solarmon's - Improved versions of c0pperdragon's design to relocate the Pi and add additional features:https://github.com/solarmon/RGBtoHDMI
 
 Please add pull requests to link to your variants here.
 
