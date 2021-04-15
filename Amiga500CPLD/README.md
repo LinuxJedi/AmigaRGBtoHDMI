@@ -35,20 +35,22 @@ You can temporarily solder wires to GPIO pins 37 for switch 2, 35 for switch 3 a
 
 ### Option 2: manual JTAG flashing
 
+The JTAG is accessible on the Pi GPIO header, so you can plug pins into the header to use a JTAG programmer to flash it. If you don't have a JTAG programmer I have documented how to build one out of a Raspberry Pi in the link below. Note that the GPIO pins xc3sprog use for JTAG are different to the RGBtoHDMI GPIO JTAG pins:
+
+https://linuxjedi.co.uk/2020/12/01/programming-xilinx-jtag-from-a-raspberry-pi/
+
 The JTAG pins are:
 
-| GPIO pin                       | Signal |
-| ------------------------------ | ------ |
-| 1 or 17                        | 3v3    |
-| 6, 9, 14, 20, 25, 30, 34 or 39 | GND    |
-| 27                             | TDI    |
-| 28                             | TMS    |
-| 38                             | TDK    |
-| 18                             | TDO    |
+| GPIO number | GPIO pin                       | Signal |
+| ----------- | ------------------------------ | ------ |
+| N/A         | 1 or 17                        | 3v3    |
+| N/A         | 6, 9, 14, 20, 25, 30, 34 or 39 | GND    |
+| 0           | 27                             | TDI    |
+| 1           | 28                             | TMS    |
+| 20          | 38                             | TCK    |
+| 24          | 18                             | TDO    |
 
-You can use any standard JTAG programmer, or even a Raspberry Pi as can be seen here: https://linuxjedi.co.uk/2020/12/01/programming-xilinx-jtag-from-a-raspberry-pi/
-
-If you are using Pi method you will need to compile the JED file which can be done in the free Xilinx ISE Design Suite.
+If you are using Pi xc3sprog method from the link above you will need to compile the JED file which can be done in the free Xilinx ISE Design Suite.
 
 ## Pi Software Installation
 
