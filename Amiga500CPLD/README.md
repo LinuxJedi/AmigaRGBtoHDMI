@@ -50,6 +50,8 @@ The JTAG pins are:
 | 20          | 38                             | TCK    |
 | 24          | 18                             | TDO    |
 
+![GPIO Example](gpio_example.png)
+
 If you are using Pi xc3sprog method from the link above you will need to compile the JED file which can be done in the free Xilinx ISE Design Suite.
 
 ## Pi Software Installation
