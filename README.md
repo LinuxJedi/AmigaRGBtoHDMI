@@ -24,6 +24,14 @@ Amiga 2000 CPLD variant that does not require a jumper and has no sparkling pixe
 
 **Currently untested**
 
+### Amiga1000CPLD
+
+Amiga 1000 CPLD variant that does not require a jumper and has no sparkling pixel issues
+
+![Amiga 1000 CPLD](Amiga1000CPLD/A1000.png)
+
+**Currently untested**
+
 ## Other versions
 
 - c0pperdragon's - The excellent original c0pperdragon design can be found at: https://github.com/c0pperdragon/Amiga-Digital-Video/

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name XC9572VQ44)(type Legacy)(uri ${KIPRJMOD}/XC9572VQ44.lib)(options "")(descr ""))
+  (lib (name rgb2hdmi)(type Legacy)(uri ${KIPRJMOD}/rgb2hdmi.lib)(options "")(descr ""))
+)
