@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name chips)(type KiCad)(uri ${KIPRJMOD}/chips.pretty)(options "")(descr ""))
+)
