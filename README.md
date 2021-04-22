@@ -39,10 +39,6 @@ Amiga 1000 CPLD variant that does not require a jumper and has no sparkling pixe
 
 Please add pull requests to link to your variants here.
 
-## Future Variants
-
-I'm currently working on a CPLD variable for the Amiga 600. Watch this space!
-
 ## Software
 
 The software used for this project can be found at https://github.com/hoglet67/RGBtoHDMI/
