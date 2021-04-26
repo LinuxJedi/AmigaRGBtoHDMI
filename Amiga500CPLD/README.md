@@ -23,17 +23,30 @@ This adaptor uses a CPLD to pass the RGB and sync signals from the Amiga 500 Den
 - In my own builds I do not populate C1. You could use this for a 3.9v LED I guess
 - You'll need some kind of push button to connect to JP1
 
+## Pi Software Installation
+
+The software on the Pi should be the latest beta release from https://github.com/IanSB/RGBtoHDMI/releases extracted onto a micro SD card in FAT32 format.
+
+You then need to edit `Profiles/Default.txt` and set the option `single_button_mode=1` (it is near the bottom of the file).
+
+
 ## Flashing the CPLD
 
-The CPLD will need flashing with the `6-12_BIT_RGB_CPLD` firmware. I've personally tested with `6-12_BIT_RGB_CPLD_v92` version.
+The CPLD will need flashing with the `6-12_BIT_RGB_CPLD` or `6-12_BIT_BBC_CPLD` firmware. They are both the same but load a different profile by default (in both cases it needs changing to the Amiga profile anyway).
 
-In theory the software on the Pi should be able to flash the CPLD when it detects the firmware is not installed. At the moment there is a bug in the RGBtoHDMI software that doesn't let the CPLD recovery mode use single button mode. This leaves you with two options:
+With the beta software the Pi can flash the CPLD when it detects the firmware is not installed. This doesn't work in the non-beta release at the moment as single button mode doesn't work in the recovery meny in the main release. So, you have three options to flash the CPLD:
 
-### Option 1: soldering wires
+### Option 1: Recovery Menu
+
+If you have followed the software steps above you will get a recovery menu, select one of the 6-12 bit options above and the Pi will flash the CPLD and reboot. You can then jump to the Initial Setup section below.
+
+### Option 2: soldering wires
+
+This is for the non-beta software so that you can use the recovery menu without single-button-mode.
 
 You can temporarily solder wires to GPIO pins 37 for switch 2, 35 for switch 3 and somewhere for ground (such as pin 39). Touch one of the switch wires against the ground wire to use that switch. You can now use this menu properly.
 
-### Option 2: manual JTAG flashing
+### Option 3: manual JTAG flashing
 
 The JTAG is accessible on the Pi GPIO header, so you can plug pins into the header to use a JTAG programmer to flash it. If you don't have a JTAG programmer I have documented how to build one out of a Raspberry Pi in the link below. Note that the GPIO pins xc3sprog use for JTAG are different to the RGBtoHDMI GPIO JTAG pins:
 
@@ -54,11 +67,6 @@ The JTAG pins are:
 
 If you are using Pi xc3sprog method from the link above you will need to compile the JED file which can be done in the free Xilinx ISE Design Suite.
 
-## Pi Software Installation
-
-The software on the Pi should be the latest release from https://github.com/hoglet67/RGBtoHDMI/releases extracted onto a micro SD card in FAT32 format.
-
-You then need to edit `Profiles/Default.txt` and set the option `single_button_mode=1` (it is near the bottom of the file).
 
 ## Initial Setup
 
