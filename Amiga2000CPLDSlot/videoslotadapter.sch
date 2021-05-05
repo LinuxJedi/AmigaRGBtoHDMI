@@ -755,51 +755,6 @@ F 3 "" H 3400 3450 50  0001 C CNN
 	1    3400 3450
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x06 J2
-U 1 1 609EC0F8
-P 10700 4900
-F 0 "J2" H 10780 4892 50  0000 L CNN
-F 1 "JTAG" H 10780 4801 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 10700 4900 50  0001 C CNN
-F 3 "~" H 10700 4900 50  0001 C CNN
-	1    10700 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0102
-U 1 1 609ED717
-P 10250 4700
-F 0 "#PWR0102" H 10250 4550 50  0001 C CNN
-F 1 "+3.3V" V 10265 4828 50  0000 L CNN
-F 2 "" H 10250 4700 50  0001 C CNN
-F 3 "" H 10250 4700 50  0001 C CNN
-	1    10250 4700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0103
-U 1 1 609EE3AD
-P 10250 4800
-F 0 "#PWR0103" H 10250 4550 50  0001 C CNN
-F 1 "GND" V 10255 4672 50  0000 R CNN
-F 2 "" H 10250 4800 50  0001 C CNN
-F 3 "" H 10250 4800 50  0001 C CNN
-	1    10250 4800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10250 4700 10500 4700
-Wire Wire Line
-	10500 4800 10250 4800
-Text Label 10500 4900 2    50   ~ 0
-TCK
-Text Label 10500 5000 2    50   ~ 0
-TDO
-Text Label 10500 5100 2    50   ~ 0
-TDI
-Text Label 10500 5200 2    50   ~ 0
-TMS
 Text Label 8650 4250 2    50   ~ 0
 TDI
 Text Label 8650 4350 2    50   ~ 0

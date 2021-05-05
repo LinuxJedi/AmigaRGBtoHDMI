@@ -34,7 +34,7 @@ You then need to edit `Profiles/Default.txt` and set the option `single_button_m
 
 The CPLD will need flashing with the `6-12_BIT_RGB_CPLD` or `6-12_BIT_BBC_CPLD` firmware. They are both the same but load a different profile by default (in both cases it needs changing to the Amiga profile anyway).
 
-With the beta software the Pi can flash the CPLD when it detects the firmware is not installed. This doesn't work in the non-beta release at the moment as single button mode doesn't work in the recovery meny in the main release. So, you have three options to flash the CPLD:
+With the beta software the Pi can flash the CPLD when it detects the firmware is not installed. This doesn't work in the non-beta release at the moment as single button mode doesn't work in the recovery menu in the main release. So, you have three options to flash the CPLD:
 
 ### Option 1: Recovery Menu
 
