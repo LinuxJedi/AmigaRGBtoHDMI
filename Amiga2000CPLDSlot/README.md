@@ -24,7 +24,7 @@ This adaptor uses a CPLD to pass the RGB and sync signals from the Amiga 2000 vi
 
 The software on the Pi should be the latest beta release from https://github.com/IanSB/RGBtoHDMI/releases extracted onto a micro SD card in FAT32 format.
 
-For beta19, you will need to copy the `Amiga_2000` from this source to the `Profiles/6-12_BIT_RGB` directory. This will be included in the next RGBtoHDMI software release.
+Prior to  beta20, you will need to copy the `Amiga_2000` from this source to the `Profiles/6-12_BIT_RGB` directory. This will be included in the next RGBtoHDMI software release. Beta20 includes thses profiles.
 
 If you wish to use single button mode, you then need to edit `Profiles/Default.txt` and set the option `single_button_mode=1` (it is near the bottom of the file).
 
