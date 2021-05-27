@@ -1,5 +1,7 @@
 # Amiga Video Slot Adapter V2
 
+**NOTE:** This is now a legacy project, please see the Amiga 2000 CPLD version also in this GitHub repository.
+
 ![Amiga 2000 Slot](videoslotadapter.png)
 
 This adapter builds on the ideas from the Amiga Denise adapter V2, adapted for use in big box Amiga video slots. LinuxJedi's Version 2 is based on Bloodmosher's V1 design but has been modified for reliability and to provide timing options.

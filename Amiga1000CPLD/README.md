@@ -18,7 +18,7 @@ This adaptor uses a CPLD to pass the RGB and sync signals from the Amiga 1000 De
 
 ### Notes
 
-- The resistors are pull-downs and as such are flexible as to value.
+- It is important that R1 is 1K due to the low value of the internal pull resistor in GPIO0 of the Pi, the other pull resistors are more flexible. If the value is too high then the software won't detect this is an Amiga board and won't show the correct firmware in the recovery menu.
 - This board can be used in single button mode with just JButton1 or with three button mode.
 - J2 is optional if you have already wired CSYNC to the Denise socket
 
@@ -38,11 +38,22 @@ Thanks to @SirCathal for the above two photos.
 
 The software on the Pi should be the latest beta release from https://github.com/IanSB/RGBtoHDMI/releases extracted onto a micro SD card in FAT32 format.
 
+### Before Beta29
+
 If you wish to use single button mode, you then need to edit `Profiles/Default.txt` and set the option `single_button_mode=1` (it is near the bottom of the file).
+
+### Beta29 Onwards
+
+You need to copy some canned profile files into place for the board:
+
+* `Amiga_CPLD_Readme/Amiga_CPLD_Setup/profile_6-12_BIT_RGB.txt` to the root of the SD card
+* `Amiga_CPLD_Readme/Amiga_CPLD_Setup/Profiles/Default.txt` to the `Profiles` directory
+
+This resolves some issues with mode switching, particularly on NTSC machines. The profile copied will automatically set `single_button_mode`.
 
 ## Flashing the CPLD
 
-The CPLD will need flashing with the `6-12_BIT_RGB_CPLD` or `6-12_BIT_BBC_CPLD` firmware.
+The CPLD will need flashing with the `6-12_BIT_RGB_CPLD` firmware. The other firmware options are not compatible with the profiles in Beta29.
 
 With the beta software the Pi can flash the CPLD when it detects the firmware is not installed. This doesn't work in the non-beta release at the moment as the required firmware will not be shown. Also if you are using single button mode, this doesn't work in the recovery menu in the main release.
 
@@ -50,9 +61,12 @@ If you have followed the software steps above you will get a recovery menu, sele
 
 ## Initial Setup
 
-You'll get a rollaing image on the initial bootup after flashing and the colours will be off. This is because the incorrect profile is in use by default. Use the buttons with the menu system to select the "Amiga 2000" profile. The regulare "Amiga" profile will not fix the rolling image because it expects CSYNC and not H/V sync used on the A2000 board.
+Prior to Beta29, on first boot the colours will look wrong and it the image will likely not be very good quality. This is because it uses an Acorn computer profile by default. You should use the main menu to change the profile to Amiga.
 
-You may also see a shimmer or wavy effect. This is because the phase is set incorrectly and needs calibration, this is a one-off easy thing to do. If you have a static image such as the Kickstart 1.3 boot screen or Workbench with no mouse movement you can use the "Auto Calibrate Video Settings" option (it will require you to select twice to activate). Alternatively you can go into the "Sampling" menu and change the "Sampling Phase" until the image looks correct. Typically 0, 3 or 5 will work fine, but it could be different in each machine.
+You may see a shimmer or wavy effect. This is because the phase is set incorrectly and needs calibration, this is a one-off easy thing to do. If you have a static image such as the Kickstart 1.3 boot screen or Workbench with no mouse movement you can use the "Auto Calibrate Video Settings" option (it will require you to select twice to activate). Alternatively you can go into the "Sampling" menu and change the "Sampling Phase" until the image looks correct. Typically 0, 3 or 5 will work fine, but it could be different in each machine.
 
 Once calibrated choose "Save Configuration" and this will be remembered for subsequent boots.
 
+## Buying PCBs
+
+I've made the PCBs available on PCBWay here: https://www.pcbway.com/project/shareproject/Amiga_1000_CPLD_RGBtoHDMI_v1_1.html

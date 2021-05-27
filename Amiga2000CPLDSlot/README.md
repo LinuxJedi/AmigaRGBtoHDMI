@@ -17,16 +17,27 @@ This adaptor uses a CPLD to pass the RGB and sync signals from the Amiga 2000 vi
 
 ### Notes
 
-- The resistors are pull-downs and as such are flexible as to value.
+- R1 needs to be a 1K pull resistor due to the low value internal I2C pull resisors in the Pi. If the value is too high then the software won't detect this is an Amiga board and won't show the correct firmware in the recovery menu.
 - This board can be used in single button mode with just JButton1 / JButton2 or with three button mode.
 
 ## Pi Software Installation
 
 The software on the Pi should be the latest beta release from https://github.com/IanSB/RGBtoHDMI/releases extracted onto a micro SD card in FAT32 format.
 
-Prior to  beta20, you will need to copy the `Amiga_2000` from this source to the `Profiles/6-12_BIT_RGB` directory. This will be included in the next RGBtoHDMI software release. Beta20 includes thses profiles.
+### Before Beta29
 
 If you wish to use single button mode, you then need to edit `Profiles/Default.txt` and set the option `single_button_mode=1` (it is near the bottom of the file).
+
+### Beta29 Onwards
+
+You need to copy some canned profile files into place for the board:
+
+* `Amiga_CPLD_Readme/Amiga_2000_CPLD_Setup/profile_6-12_BIT_RGB.txt` to the root of the SD card
+* `Amiga_CPLD_Readme/Amiga_2000_CPLD_Setup/Profiles/Default.txt` to the `Profiles` directory
+
+This resolves some issues with mode switching, particularly on NTSC machines.
+
+If you wish to use three button mode, you then need to edit `Profiles/Default.txt` and set the option `single_button_mode=0` (it is near the bottom of the file).
 
 ## Flashing the CPLD
 
@@ -38,9 +49,12 @@ If you have followed the software steps above you will get a recovery menu, sele
 
 ## Initial Setup
 
-You'll get a rollaing image on the initial bootup after flashing and the colours will be off. This is because the incorrect profile is in use by default. Use the buttons with the menu system to select the "Amiga 2000" profile. The regulare "Amiga" profile will not fix the rolling image because it expects CSYNC and not H/V sync used on the A2000 board.
+Prior to Beta29, you'll get a rollaing image on the initial bootup after flashing and the colours will be off. This is because the incorrect profile is in use by default. Use the buttons with the menu system to select the "Amiga 2000" profile. The regulare "Amiga" profile will not fix the rolling image because it expects CSYNC and not H/V sync used on the A2000 board.
 
 You may also see a shimmer or wavy effect. This is because the phase is set incorrectly and needs calibration, this is a one-off easy thing to do. If you have a static image such as the Kickstart 1.3 boot screen or Workbench with no mouse movement you can use the "Auto Calibrate Video Settings" option (it will require you to select twice to activate). Alternatively you can go into the "Sampling" menu and change the "Sampling Phase" until the image looks correct. Typically 0, 3 or 5 will work fine, but it could be different in each machine.
 
 Once calibrated choose "Save Configuration" and this will be remembered for subsequent boots.
 
+## Buying PCBs
+
+I've made the PCBs available on PCBWay here: https://www.pcbway.com/project/shareproject/Amiga_2000_CPLD_RGBtoHDMI_v1_2.html
