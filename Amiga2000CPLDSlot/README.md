@@ -58,3 +58,7 @@ Once calibrated choose "Save Configuration" and this will be remembered for subs
 ## Buying PCBs
 
 I've made the PCBs available on PCBWay here: https://www.pcbway.com/project/shareproject/Amiga_2000_CPLD_RGBtoHDMI_v1_2.html
+
+## Bracket
+
+If you want to 3D print a bracket for this, wiretap has created an STL for this which can be found here: https://www.thingiverse.com/thing:4862309
