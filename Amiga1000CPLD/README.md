@@ -36,13 +36,7 @@ Thanks to @SirCathal for the above two photos.
 
 ## Pi Software Installation
 
-The software on the Pi should be the latest beta release from https://github.com/IanSB/RGBtoHDMI/releases extracted onto a micro SD card in FAT32 format.
-
-### Before Beta29
-
-If you wish to use single button mode, you then need to edit `Profiles/Default.txt` and set the option `single_button_mode=1` (it is near the bottom of the file).
-
-### Beta29 Onwards
+The software on the Pi should be at least the latest 20210529 release from the [main tree](https://github.com/hoglet67/RGBtoHDMI/releases) or the latest [IanSB beta release](https://github.com/IanSB/RGBtoHDMI/releases) extracted onto a micro SD card in FAT32 format.
 
 You need to copy some canned profile files into place for the board:
 
@@ -53,15 +47,11 @@ This resolves some issues with mode switching, particularly on NTSC machines. Th
 
 ## Flashing the CPLD
 
-The CPLD will need flashing with the `6-12_BIT_RGB_CPLD` firmware. The other firmware options are not compatible with the profiles in Beta29.
+The CPLD will need flashing with the `6-12_BIT_RGB_CPLD` firmware. The other firmware options are not compatible with the profiles.
 
-With the beta software the Pi can flash the CPLD when it detects the firmware is not installed. This doesn't work in the non-beta release at the moment as the required firmware will not be shown. Also if you are using single button mode, this doesn't work in the recovery menu in the main release.
-
-If you have followed the software steps above you will get a recovery menu, select the firmware above and the Pi will flash the CPLD and reboot.
+If you have followed the software steps above you will get a recovery menu, select `6-12_BIT_RGB_CPLD`, confirm and the Pi will flash the CPLD and reboot.
 
 ## Initial Setup
-
-Prior to Beta29, on first boot the colours will look wrong and it the image will likely not be very good quality. This is because it uses an Acorn computer profile by default. You should use the main menu to change the profile to Amiga.
 
 You may see a shimmer or wavy effect. This is because the phase is set incorrectly and needs calibration, this is a one-off easy thing to do. If you have a static image such as the Kickstart 1.3 boot screen or Workbench with no mouse movement you can use the "Auto Calibrate Video Settings" option (it will require you to select twice to activate). Alternatively you can go into the "Sampling" menu and change the "Sampling Phase" until the image looks correct. Typically 0, 3 or 5 will work fine, but it could be different in each machine.
 
@@ -69,4 +59,4 @@ Once calibrated choose "Save Configuration" and this will be remembered for subs
 
 ## Buying PCBs
 
-I've made the PCBs available on PCBWay here: https://www.pcbway.com/project/shareproject/Amiga_1000_CPLD_RGBtoHDMI_v1_1.html
+I've made the [PCBs available on PCBWay here](https://www.pcbway.com/project/shareproject/Amiga_1000_CPLD_RGBtoHDMI_v1_1.html)

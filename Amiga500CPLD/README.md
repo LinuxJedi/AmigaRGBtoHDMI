@@ -26,13 +26,7 @@ This adaptor uses a CPLD to pass the RGB and sync signals from the Amiga 500 Den
 
 ## Pi Software Installation
 
-The software on the Pi should be the latest beta release from https://github.com/IanSB/RGBtoHDMI/releases extracted onto a micro SD card in FAT32 format.
-
-### Before Beta29
-
-You then need to edit `Profiles/Default.txt` and set the option `single_button_mode=1` (it is near the bottom of the file).
-
-### Beta29 Onwards
+The software on the Pi should be at least the latest 20210529 release from the [main tree](https://github.com/hoglet67/RGBtoHDMI/releases) or the latest [IanSB beta release](https://github.com/IanSB/RGBtoHDMI/releases) extracted onto a micro SD card in FAT32 format.
 
 You need to copy some canned profile files into place for the board:
 
@@ -43,50 +37,16 @@ This resolves some issues with mode switching, particularly on NTSC machines. Th
 
 ## Flashing the CPLD
 
-The CPLD will need flashing with the `6-12_BIT_RGB_CPLD` firmware. The other firmware options are not compatible with the profiles in Beta29.
+The CPLD will need flashing with the `6-12_BIT_RGB_CPLD` firmware. The other firmware options are not compatible with the profiles.
 
-With the beta software the Pi can flash the CPLD when it detects the firmware is not installed. This doesn't work in the non-beta release at the moment as single button mode doesn't work in the recovery menu in the main release. So, you have three options to flash the CPLD:
-
-### Option 1: Recovery Menu
-
-If you have followed the software steps above you will get a recovery menu, select one of the 6-12 bit options above and the Pi will flash the CPLD and reboot. You can then jump to the Initial Setup section below.
-
-### Option 2: soldering wires
-
-This is for the non-beta software so that you can use the recovery menu without single-button-mode.
-
-You can temporarily solder wires to GPIO pins 37 for switch 2, 35 for switch 3 and somewhere for ground (such as pin 39). Touch one of the switch wires against the ground wire to use that switch. You can now use this menu properly.
-
-### Option 3: manual JTAG flashing
-
-The JTAG is accessible on the Pi GPIO header, so you can plug pins into the header to use a JTAG programmer to flash it. If you don't have a JTAG programmer I have documented how to build one out of a Raspberry Pi in the link below. Note that the GPIO pins xc3sprog use for JTAG are different to the RGBtoHDMI GPIO JTAG pins:
-
-https://linuxjedi.co.uk/2020/12/01/programming-xilinx-jtag-from-a-raspberry-pi/
-
-The JTAG pins are:
-
-| GPIO number | GPIO pin                       | Signal |
-| ----------- | ------------------------------ | ------ |
-| N/A         | 1 or 17                        | 3v3    |
-| N/A         | 6, 9, 14, 20, 25, 30, 34 or 39 | GND    |
-| 0           | 27                             | TDI    |
-| 1           | 28                             | TMS    |
-| 20          | 38                             | TCK    |
-| 24          | 18                             | TDO    |
-
-![GPIO Example](gpio_example.png)
-
-If you are using Pi xc3sprog method from the link above you will need to compile the JED file which can be done in the free Xilinx ISE Design Suite.
-
+If you have followed the software steps above you will get a recovery menu, select `6-12_BIT_RGB_CPLD`, confirm and the Pi will flash the CPLD and reboot. You can then jump to the Initial Setup section below.
 
 ## Initial Setup
 
-Prior to Beta29, on first boot the colours will look wrong and it the image will likely not be very good quality. This is because it uses an Acorn computer profile by default. You should use the main menu to change the profile to Amiga.
-
-You may also see a shimmer or wavy effect. This is because the phase is set incorrectly and needs calibration, this is a one-off easy thing to do. If you have a static image such as the Kickstart 1.3 boot screen or Workbench with no mouse movement you can use the "Auto Calibrate Video Settings" option (it will require you to select twice to activate). Alternatively you can go into the "Sampling" menu and change the "Sampling Phase" until the image looks correct. Typically 0, 3 or 5 will work fine, but it could be different in each machine.
+You may also a shimmer or wavy effect. This is because the phase is set incorrectly and needs calibration, this is a one-off easy thing to do. If you have a static image such as the Kickstart 1.3 boot screen or Workbench with no mouse movement you can use the "Auto Calibrate Video Settings" option (it will require you to select twice to activate). Alternatively you can go into the "Sampling" menu and change the "Sampling Phase" until the image looks correct. Typically 0, 3 or 5 will work fine, but it could be different in each machine.
 
 Once calibrated choose "Save Configuration" and this will be remembered for subsequent boots.
 
 ## Buying PCBs
 
-I've made the PCBs available on PCBWay here: https://www.pcbway.com/project/shareproject/Amiga_500_CPLD_RGBtoHDMI_v1.html
+I've made the [PCBs available on PCBWay](https://www.pcbway.com/project/shareproject/Amiga_500_CPLD_RGBtoHDMI_v1.html)
