@@ -4,6 +4,8 @@
 
 This adaptor uses a CPLD to pass the RGB and sync signals from the Amiga 1000 Denise socket to the Rasperry Pi Zero. It derives the pixel clock in a very different way to other designs and therefore does not require a jumper for Denise / Super Denise and has no "sparkling" pixel issues. It also has the advantage of being firmware upgradable if there are any issues found in the logic.
 
+**NOTE:** There is an error in v1.1 boards, the text starting "IF YOU CAN READ THIS" is on the wrong side and shoud not be covered up by the Pi. The Pi goes outwards from the board.
+
 ## BOM
 
 | Symbol       | Component                         |
