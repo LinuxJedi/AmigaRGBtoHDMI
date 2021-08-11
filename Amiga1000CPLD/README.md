@@ -16,7 +16,9 @@ This adaptor uses a CPLD to pass the RGB and sync signals from the Amiga 1000 De
 | JButton1 - 3 | 2pin right angle header 2.54mm    |
 | R1           | 1K 0603                           |
 | R2           | 4.7K 0603                         |
-| U1           | XC9572XL-10VQG44C                 |
+| U1           | 48pin DIP socket 2.54mm           |
+| U2           | 2x24pin SILs machined pins 2.54mm |
+| U3           | XC9572XL-10VQG44C                 |
 
 ### Notes
 
