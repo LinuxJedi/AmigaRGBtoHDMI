@@ -28,11 +28,11 @@ This adaptor uses a CPLD to pass the RGB and sync signals from the Amiga 1000 De
 
 ## CSYNC
 
-The Amiga 1000 does not have CSYNC wired to Denise. There are two ways around this, the first is to wire CSYNC to the Denise socket on the motherboard using a patch wire. On a PAL system this is pin 8 of UA6 to pin 32 of Denise as below:
+The Amiga 1000 does not have CSYNC wired to Denise. There are two ways around this, the first is to wire CSYNC to the Denise socket on the motherboard using a patch wire. This is pin 8 of UA6 to pin 32 of Denise as below:
 
 ![PAL CSYNC patch](patch.jpg)
 
-Alternatively you can use the "CSYNC IN" on the RGB to HDMI board to hook onto the relevant CSYNC signal. On the PAL version this is pin 8 or UA6 as can be seen below:
+Alternatively you can use the "CSYNC IN" on the RGB to HDMI board to hook onto the relevant CSYNC signal. This is pin 8 or UA6 as can be seen below (for both PAL and NTSC):
 
 ![PAL CSYNC pin](csync.jpg)
 
