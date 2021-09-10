@@ -1,4 +1,5 @@
 (fp_lib_table
-  (lib (name chips)(type KiCad)(uri ${KIPRJMOD}/chips.pretty)(options "")(descr ""))
-  (lib (name Open68000Relocator)(type KiCad)(uri /home/linuxjedi/Programming/Git/amiga_pcbs/a500relocator/Open68000Relocator.pretty)(options "")(descr ""))
+  (lib (name "chips")(type "KiCad")(uri "${KIPRJMOD}/chips.pretty")(options "")(descr ""))
+  (lib (name "Open68000Relocator")(type "KiCad")(uri "/home/linuxjedi/Programming/Git/amiga_pcbs/a500relocator/Open68000Relocator.pretty")(options "")(descr ""))
+  (lib (name "lxj")(type "KiCad")(uri "${KIPRJMOD}/lxj.pretty")(options "")(descr ""))
 )
