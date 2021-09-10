@@ -1165,7 +1165,7 @@
     (tedit 0) (tstamp b1d626c6-086c-44e4-8206-ba28e4f0e9ce)
     (at 76.708 62.484 15)
     (attr board_only exclude_from_pos_files exclude_from_bom)
-    (fp_text reference "G***" (at 0 0 15) (layer "F.SilkS")
+    (fp_text reference "G***" (at 0 0 15) (layer "F.SilkS") hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
       (tstamp 110b2100-730a-491c-ba32-572e00126b75)
     )
@@ -6453,7 +6453,7 @@
     (tedit 0) (tstamp e921698d-82e4-4088-9d49-7fff6af297b7)
     (at 76.708 62.484 15)
     (attr board_only exclude_from_pos_files exclude_from_bom)
-    (fp_text reference "G***" (at 0 0 15) (layer "F.SilkS")
+    (fp_text reference "G***" (at 0 0 15) (layer "F.SilkS") hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
       (tstamp 1e82e7ad-c4c2-4746-b55c-026fe03d9310)
     )
