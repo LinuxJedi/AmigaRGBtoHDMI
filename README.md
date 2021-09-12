@@ -37,7 +37,7 @@ Please add pull requests to link to your variants here.
 
 ## Software
 
-The software used for this project can be found on the 'dev' branch of https://github.com/IanSB/RGBtoHDMI/
+The software used for this project can be found at https://github.com/hoglet67/RGBtoHDMI/
 
 ## Ready Built Boards
 
