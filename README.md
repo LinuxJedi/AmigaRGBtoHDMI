@@ -2,6 +2,8 @@
 
 LinuxJedi's designs for Amiga RGBtoHDMI boards.
 
+**ATTENTION PI Zero 2W users**: You can now use a Pi Zero 2W with the CPLD RGBtoHDMI using Beta43 onwards available [here](https://github.com/IanSB/RGBtoHDMI/releases).
+
 ## Projects in This Tree
 
 ### Amiga500CPLD

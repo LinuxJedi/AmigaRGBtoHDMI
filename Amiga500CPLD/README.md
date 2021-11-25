@@ -4,6 +4,8 @@
 
 This adaptor uses a CPLD to pass the RGB and sync signals from the Amiga 500 Denise socket to the Rasperry Pi Zero. It derives the pixel clock in a very different way to the c0pperdragon design and therefore does not require a jumper for Denise / Super Denise and has no "sparkling" pixel issues. It also has the advantage of being firmware upgradable if there are any issues found in the logic.
 
+**ATTENTION PI Zero 2W users**: You can now use a Pi Zero 2W with the CPLD RGBtoHDMI using Beta43 onwards available [here](https://github.com/IanSB/RGBtoHDMI/releases).
+
 ## BOM
 
 | Symbol     | Component                         |

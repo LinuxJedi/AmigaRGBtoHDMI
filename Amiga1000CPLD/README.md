@@ -6,6 +6,8 @@ This adaptor uses a CPLD to pass the RGB and sync signals from the Amiga 1000 De
 
 **NOTE:** There is an error in v1.1 boards, the text starting "IF YOU CAN READ THIS" is on the wrong side and shoud not be covered up by the Pi. The Pi goes outwards from the board.
 
+**ATTENTION PI Zero 2W users**: You can now use a Pi Zero 2W with the CPLD RGBtoHDMI using Beta43 onwards available [here](https://github.com/IanSB/RGBtoHDMI/releases).
+
 ## BOM
 
 | Symbol       | Component                         |
