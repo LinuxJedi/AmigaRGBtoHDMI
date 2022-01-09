@@ -4,32 +4,27 @@
 
 This adaptor uses a CPLD to pass the RGB and sync signals from the Amiga 2000 video slot to the Rasperry Pi Zero. It derives the pixel clock in a very different way to other designs and therefore does not require a jumper for Denise / Super Denise and has no "sparkling" pixel issues. It also has the advantage of being firmware upgradable if there are any issues found in the logic.
 
-Version 2 of this board is logically identical to version 1, but is designed to be easier to build and easier for the user to install. The Pi faces the rear of the Amiga so that the HDMI can be plugged directly into it and instead of wires it uses physical buttons.
-
-**ATTENTION PI Zero 2W users**: You can now use a Pi Zero 2W with the CPLD RGBtoHDMI using 24th December 2021 release onwards.
+**ATTENTION PI Zero 2W users**: You can now use a Pi Zero 2W with the CPLD RGBtoHDMI using Beta43 onwards available [here](https://github.com/IanSB/RGBtoHDMI/releases).
 
 ## BOM
 
-| Symbol       | Component                               |
-| ------------ | --------------------------------------- |
-| C1 - C3      | 0.1uF 0603                              |
-| J1           | 2x20pin socket 2.54mm                   |
-| SW1 - SW3    | SKHHLQA010 90° SPST 8.35mm push button  |
-| R1           | 1K 0603                                 |
-| R2           | 4.7K 0603                               |
-| U1           | XC9572XL-10VQG44C                       |
+| Symbol       | Component                         |
+| ------------ | --------------------------------- |
+| C1, C2, C3   | 0.1uF 0603                        |
+| J1           | 2x20pin socket 2.54mm             |
+| JButton1 - 6 | 2pin right angle header 2.54mm    |
+| R1           | 1K 0603                           |
+| R2           | 4.7K 0603                         |
+| U1           | XC9572XL-10VQG44C                 |
 
 ### Notes
 
 - R1 needs to be a 1K pull resistor due to the low value internal I2C pull resisors in the Pi. If the value is too high then the software won't detect this is an Amiga board and won't show the correct firmware in the recovery menu.
-- This board can be used in single button mode with just SW1.
-- You can use smaller push buttons but they won't reach outside of the A2000's case, this may be fine with the correct bracket.
-- Brackets for the original A2000 RGBtoHDMI boards are **NOT** compatible, the mounting holes have been moved.
-- It is recommended you use 4x11mm M2.5 standoffs to hold the Pi in place, alternatively you can use 10mm M2.5 standoffs and 1mm M2.5 washers.
+- This board can be used in single button mode with just JButton1 / JButton2 or with three button mode.
 
 ## Pi Software Installation
 
-The software on the Pi should be at least the latest 20211224 release from the [main tree](https://github.com/hoglet67/RGBtoHDMI/releases) or the latest [IanSB beta release](https://github.com/IanSB/RGBtoHDMI/releases) extracted onto a micro SD card in FAT32 format.
+The software on the Pi should be at least the latest 20210529 release from the [main tree](https://github.com/hoglet67/RGBtoHDMI/releases) or the latest [IanSB beta release](https://github.com/IanSB/RGBtoHDMI/releases) extracted onto a micro SD card in FAT32 format.
 
 You need to copy some canned profile files into place for the board:
 
@@ -54,8 +49,8 @@ Once calibrated choose "Save Configuration" and this will be remembered for subs
 
 ## Buying PCBs
 
-I've made the [PCBs available on PCBWay](https://www.pcbway.com/project/shareproject/Amiga_2000_CPLD_RGBtoHDMI_v2_1_83f23b25.html).
+I've made the [PCBs available on PCBWay](https://www.pcbway.com/project/shareproject/Amiga_2000_CPLD_RGBtoHDMI_v1_2.html).
 
 ## Bracket
 
-Comming soon.
+If you want to 3D print a bracket for this, wiretap [has created an STL for this](https://www.thingiverse.com/thing:4862309).

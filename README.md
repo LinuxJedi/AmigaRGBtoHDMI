@@ -24,11 +24,14 @@ Amiga 1000 CPLD variant that does not require a jumper and has no sparkling pixe
 
 ![Amiga 1000 CPLD](Amiga1000CPLD/A1000.png)
 
-### Amiga2000Slot (Legacy board)
+### Legacy boards
 
-A variant of Bloodmosher's Amiga 2000 RGBtoHDMI with several changes.
+The legacy boards directory contains:
 
-![Amiga 2000 Slot](Amiga2000Slot/videoslotadapter.png)
+* Amiga 2000 RGBtoHDMI v2
+* Amiga 2000 CPLD RGBtoHDMI v1.2
+
+These have been superseeded by the Amiga 2000 CPLD RGBtoHDMI v2.1 board.
 
 ## Other versions
 
