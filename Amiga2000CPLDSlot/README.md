@@ -56,6 +56,8 @@ Once calibrated choose "Save Configuration" and this will be remembered for subs
 
 I've made the [PCBs available on PCBWay](https://www.pcbway.com/project/shareproject/Amiga_2000_CPLD_RGBtoHDMI_v2_1_83f23b25.html).
 
+A limited edition version of this board with the LinuxJedi logo containing a glowing lightsaber can be found [on Tindie](https://www.tindie.com/products/linuxjedi/amiga-2000-rgb-to-hdmi/).
+
 ## Bracket
 
 Comming soon.
