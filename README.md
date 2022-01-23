@@ -2,7 +2,11 @@
 
 LinuxJedi's designs for Amiga RGBtoHDMI boards.
 
-**ATTENTION PI Zero 2W users**: You can now use a Pi Zero 2W with the CPLD RGBtoHDMI using Beta43 onwards available [here](https://github.com/IanSB/RGBtoHDMI/releases).
+**ATTENTION PI Zero 2W users**: You can now use a Pi Zero 2W with the CPLD RGBtoHDMI using the December 24th 2021 release.
+
+## Amiga RGBtoHDMI Tester
+
+If you are a builder of these boards I have designed a tester that safely tests these boards without requiring a Denise or Amiga. This reduces any potential damage and test if you don't have a specific Amiga model. These can be found [on Tindie](https://www.tindie.com/products/linuxjedi/amiga-rgbtohdmi-tester/).
 
 ## Projects in This Tree
 
@@ -44,11 +48,19 @@ Please add pull requests to link to your variants here.
 
 The software used for this project can be found at https://github.com/hoglet67/RGBtoHDMI/
 
+## Troubleshooting
+
+### Cannot use the CPLD flash menu
+
+By default the RGBtoHDMI software is in three button mode. You need to copy the profiles in the instructions for your board which sets up a few things including the single button mode.
+
 ## Ready Built Boards
 
 If you want a ready built board for either design please contact andrew@linuxjedi.co.uk and I can put you in touch with whoever is building / selling at a reasonable price.
 
 Likewise if you are a someone selling these designs, please let me know if you want me to put you in touch with buyers who contact me.
+
+I also sell some of these designs [on Tindie](https://www.tindie.com/stores/linuxjedi/).
 
 Alternatively I've made the PCBs available on PCBWay here: https://www.pcbway.com/project/member/?bmbno=0369642B-E3DA-48
 
