@@ -447,10 +447,10 @@ F 3 "" H 7850 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C1
+L Device:C C2
 U 1 1 606DB554
 P 8400 5500
-F 0 "C1" H 8515 5546 50  0000 L CNN
+F 0 "C2" H 8515 5546 50  0000 L CNN
 F 1 "0.1uF" H 8515 5455 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8438 5350 50  0001 C CNN
 F 3 "~" H 8400 5500 50  0001 C CNN
@@ -458,10 +458,10 @@ F 3 "~" H 8400 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C2
+L Device:C C3
 U 1 1 606DBC4A
 P 8750 5500
-F 0 "C2" H 8865 5546 50  0000 L CNN
+F 0 "C3" H 8865 5546 50  0000 L CNN
 F 1 "0.1uF" H 8865 5455 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8788 5350 50  0001 C CNN
 F 3 "~" H 8750 5500 50  0001 C CNN
@@ -469,16 +469,32 @@ F 3 "~" H 8750 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C3
+L Device:C C4
 U 1 1 606DC3CB
 P 9050 5500
-F 0 "C3" H 9165 5546 50  0000 L CNN
+F 0 "C4" H 9165 5546 50  0000 L CNN
 F 1 "0.1uF" H 9165 5455 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 9088 5350 50  0001 C CNN
 F 3 "~" H 9050 5500 50  0001 C CNN
 	1    9050 5500
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:CP C1
+U 1 1 606DCCCF
+P 8000 5500
+F 0 "C1" H 8118 5546 50  0000 L CNN
+F 1 "10uF" H 8118 5455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 8038 5350 50  0001 C CNN
+F 3 "~" H 8000 5500 50  0001 C CNN
+	1    8000 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 5350 7850 5350
+Wire Wire Line
+	8000 5350 8400 5350
+Connection ~ 8000 5350
 Wire Wire Line
 	8400 5350 8750 5350
 Connection ~ 8400 5350
@@ -490,6 +506,8 @@ Wire Wire Line
 Wire Wire Line
 	8750 5650 8400 5650
 Connection ~ 8750 5650
+Wire Wire Line
+	8400 5650 8000 5650
 Connection ~ 8400 5650
 $Comp
 L power:GND #PWR012
@@ -502,6 +520,9 @@ F 3 "" H 7850 5650 50  0001 C CNN
 	1    7850 5650
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7850 5650 8000 5650
+Connection ~ 8000 5650
 Text Label 1750 2450 0    50   ~ 0
 D6
 Wire Wire Line
@@ -1033,8 +1054,4 @@ Wire Wire Line
 	8500 4150 10100 4150
 Wire Wire Line
 	5800 8850 5800 9800
-Wire Wire Line
-	7850 5350 8400 5350
-Wire Wire Line
-	7850 5650 8400 5650
 $EndSCHEMATC
