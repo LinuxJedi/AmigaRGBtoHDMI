@@ -10,21 +10,21 @@ This adaptor uses a CPLD to pass the RGB and sync signals from the Amiga 500 Den
 
 | Symbol     | Component                         |
 | ---------- | --------------------------------- |
-| C1 - C3    | 0.1uF 0603                        |
+| C1         | Optional 10uF 1206                |
+| C2, C3, C4 | 0.1uF 0603                        |
 | J1         | 2x20pin socket 2.54mm             |
 | JP1        | 2pin right angle header 2.54mm    |
-| J2         | 1pin right angle header 2.54mm    |
-| R1         | 1K 0603                           |
-| R2         | 4.7K 0603                         |
+| R1, R2     | 1K 0603                           |
+| R3         | 4.7K 0603                         |
 | U1         | 48pin DIP socket 2.54mm           |
 | U2         | 2x24pin SILs machined pins 2.54mm |
 | U3         | XC9572XL-10VQG44C                 |
 
 ### Notes
 
-- It is important that R1 is 1K due to the low value of the internal pull resistor in GPIO0 of the Pi, the other pull resistors are more flexible (R1 is optional as the Pi will pull this internally). If the value is too high then the software won't detect this is an Amiga board and won't show the correct firmware in the recovery menu.
+- It is important that R2 is 1K due to the low value of the internal pull resistor in GPIO0 of the Pi, the other pull resistors are more flexible (R1 is optional as the Pi will pull this internally). If the value is too high then the software won't detect this is an Amiga board and won't show the correct firmware in the recovery menu.
+- In my own builds I do not populate C1. You could use this for a 3.9v LED I guess
 - You'll need some kind of push button to connect to JP1
-- J2 is optional, it is only needed for revision 3 motherboards to clip onto pin 9 of U41 on the Amiga (photo coming soon)
 
 ## Pi Software Installation
 
@@ -51,4 +51,4 @@ Once calibrated choose "Save Configuration" and this will be remembered for subs
 
 ## Buying PCBs
 
-I've made the [PCBs available on PCBWay](https://www.pcbway.com/project/shareproject/Amiga_500_CPLD_RGBtoHDMI_v2_fb52eff9.html)
+I've made the [PCBs available on PCBWay](https://www.pcbway.com/project/shareproject/Amiga_500_CPLD_RGBtoHDMI_v1.html)

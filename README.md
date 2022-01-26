@@ -37,6 +37,10 @@ The legacy boards directory contains:
 
 These have been superseeded by the Amiga 2000 CPLD RGBtoHDMI v2.1 board.
 
+* Amiga 500 CPLD v1
+
+This has been superseeded by the Amiga 500 CPLD RGBtoHDMI v2.0 board.
+
 ## Other versions
 
 - c0pperdragon's - The excellent original c0pperdragon design can be found at: https://github.com/c0pperdragon/Amiga-Digital-Video/
