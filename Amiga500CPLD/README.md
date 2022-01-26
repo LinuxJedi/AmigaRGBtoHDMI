@@ -25,6 +25,7 @@ This adaptor uses a CPLD to pass the RGB and sync signals from the Amiga 500 Den
 - It is important that R1 is 1K due to the low value of the internal pull resistor in GPIO0 of the Pi, the other pull resistors are more flexible (R1 is optional as the Pi will pull this internally). If the value is too high then the software won't detect this is an Amiga board and won't show the correct firmware in the recovery menu.
 - You'll need some kind of push button to connect to JP1
 - J2 is optional, it is only needed for revision 3 motherboards to clip onto pin 9 of U41 on the Amiga (photo coming soon)
+- The Pi mounting holes are M2.5, 11mm posts or 10mm with 1mm washers are recommended
 
 ## Pi Software Installation
 
