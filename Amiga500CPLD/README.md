@@ -51,4 +51,4 @@ Once calibrated choose "Save Configuration" and this will be remembered for subs
 
 ## Buying PCBs
 
-I've made the [PCBs available on PCBWay](https://www.pcbway.com/project/shareproject/Amiga_500_CPLD_RGBtoHDMI_v1.html)
+I've made the [PCBs available on PCBWay](https://www.pcbway.com/project/shareproject/Amiga_500_CPLD_RGBtoHDMI_v2_fb52eff9.html)
