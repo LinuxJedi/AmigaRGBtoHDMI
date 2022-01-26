@@ -52,4 +52,6 @@ Once calibrated choose "Save Configuration" and this will be remembered for subs
 
 ## Buying PCBs
 
-I've made the [PCBs available on PCBWay](https://www.pcbway.com/project/shareproject/Amiga_500_CPLD_RGBtoHDMI_v2_fb52eff9.html)
+I've made the [PCBs available on PCBWay](https://www.pcbway.com/project/shareproject/Amiga_500_CPLD_RGBtoHDMI_v2_fb52eff9.html).
+
+You can also purchase PCBs from me [via Tindie](https://www.tindie.com/products/linuxjedi/amiga-500-rgb-to-hdmi-pcb/).
