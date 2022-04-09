@@ -30,6 +30,8 @@ This adaptor uses a CPLD to pass the RGB and sync signals from the Amiga 1000 De
 
 ## CSYNC
 
+**NOTE**: If you have a Rejouvenator in your Amiga 1000, this patches the CSYNC and you don't need a patch wire, using the CSYNC pin can cause sync issues with a Rejouvenator.
+
 The Amiga 1000 does not have CSYNC wired to Denise. There are two ways around this, the first is to wire CSYNC to the Denise socket on the motherboard using a patch wire. This is pin 8 of UA6 to pin 32 of Denise as below:
 
 ![PAL CSYNC patch](patch.jpg)
