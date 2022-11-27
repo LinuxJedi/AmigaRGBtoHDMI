@@ -12,17 +12,17 @@ Version 2.2 has been changed to make the board smaller. It includes a fuse due t
 
 ## BOM
 
-| Symbol       | Component                               |
-| ------------ | --------------------------------------- |
-| C1 - C3      | 0.1uF 0603                              |
-| J1           | 2x20pin socket 2.54mm                   |
-| SW1 - SW3    | SKHHLQA010 90° SPST 8.35mm push button  |
-| R1           | 1K 0603                                 |
-| R3           | 4.7K 0603                               |
-| U1           | XC9572XL-10VQG44C                       |
-| F1           | Littlefuse 1206L075THYR                 |
-| D1           | Any 0603 LED                            |
-| R2           | A resistor between the LED and +5v line |
+| Symbol       | Component                                    |
+| ------------ | -------------------------------------------- |
+| C1 - C3      | 0.1uF 0603                                   |
+| J1           | 2x20pin socket 2.54mm                        |
+| SW1 - SW3    | SKHHLQA010 90° SPST 8.35mm push button       |
+| R1           | 1K 0603                                      |
+| R3           | 4.7K 0603                                    |
+| U1           | XC9572XL-10VQG44C                            |
+| F1           | Littlefuse 1206L075THYR                      |
+| D1           | Any 0603 LED                                 |
+| R2           | A 0603 resistor between the LED and +5v line |
 
 ### Notes
 
@@ -62,10 +62,4 @@ Once calibrated choose "Save Configuration" and this will be remembered for subs
 
 ## Buying PCBs
 
-I've made the [PCBs available on PCBWay](https://www.pcbway.com/project/shareproject/Amiga_2000_CPLD_RGBtoHDMI_v2_1_83f23b25.html).
-
-You will also shortly be able to buy PCBs from my store, [Retro Supplies](https://retrosupplies.co.uk).
-
-## Bracket
-
-Comming soon.
+You can buy PCBs from my store, [Retro Supplies](https://www.retrosupplies.co.uk/amiga-rgbtohdmi/rgbtohdmi-for-amiga-2000-v22-pcb-only).

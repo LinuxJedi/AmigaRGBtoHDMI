@@ -34,8 +34,9 @@ The legacy boards directory contains:
 
 * Amiga 2000 RGBtoHDMI v2
 * Amiga 2000 CPLD RGBtoHDMI v1.2
+* Amiga 2000 CPLD RGBtoHDMI v2.1
 
-These have been superseeded by the Amiga 2000 CPLD RGBtoHDMI v2.1 board.
+These have been superseeded by the Amiga 2000 CPLD RGBtoHDMI v2.2 board.
 
 * Amiga 500 CPLD v1
 
