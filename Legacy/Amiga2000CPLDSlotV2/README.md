@@ -6,8 +6,6 @@ This adaptor uses a CPLD to pass the RGB and sync signals from the Amiga 2000 vi
 
 Version 2 of this board is logically identical to version 1, but is designed to be easier to build and easier for the user to install. The Pi faces the rear of the Amiga so that the HDMI can be plugged directly into it and instead of wires it uses physical buttons.
 
-Version 2.2 has been changed to make the board smaller. It includes a fuse due to a few users misaligning the Pi, causing a sort between +5v and GND which in-turn caused the +5v line to burn. It also includes an optional LED to indicate there is power to the +5v line (that the fuse hasn't blown).
-
 **ATTENTION PI Zero 2W users**: You can now use a Pi Zero 2W with the CPLD RGBtoHDMI using 24th December 2021 release onwards.
 
 ## BOM
@@ -18,22 +16,16 @@ Version 2.2 has been changed to make the board smaller. It includes a fuse due t
 | J1           | 2x20pin socket 2.54mm                   |
 | SW1 - SW3    | SKHHLQA010 90° SPST 8.35mm push button  |
 | R1           | 1K 0603                                 |
-| R3           | 4.7K 0603                               |
+| R2           | 4.7K 0603                               |
 | U1           | XC9572XL-10VQG44C                       |
-| F1           | Littlefuse 1206L075THYR                 |
-| D1           | Any 0603 LED                            |
-| R2           | A resistor between the LED and +5v line |
 
 ### Notes
 
 - R1 needs to be a 1K pull resistor due to the low value internal I2C pull resisors in the Pi. If the value is too high then the software won't detect this is an Amiga board and won't show the correct firmware in the recovery menu.
-- The F1 fuse can be any 1206 fuse with a hold current of 0.75A or greater. You could also just use a 0ohm resistor if you do not wish to use a fuse.
-- D1 and R2 are optional, used as indication that the 5V line is being provided to the Pi and there is no fuse trip.
 - This board can be used in single button mode with just SW1.
 - You can use smaller push buttons but they won't reach outside of the A2000's case, this may be fine with the correct bracket.
 - Brackets for the original A2000 RGBtoHDMI boards are **NOT** compatible, the mounting holes have been moved.
 - It is recommended you use 4x11mm M2.5 standoffs to hold the Pi in place, alternatively you can use 10mm M2.5 standoffs and 1mm M2.5 washers.
-- The board was designed in a KiCad 6.99 nightly build, you will need to use 6.99 (or higher if you are reading this after 7.0 is released) to be able to use the files.
 
 ## Pi Software Installation
 
@@ -64,7 +56,7 @@ Once calibrated choose "Save Configuration" and this will be remembered for subs
 
 I've made the [PCBs available on PCBWay](https://www.pcbway.com/project/shareproject/Amiga_2000_CPLD_RGBtoHDMI_v2_1_83f23b25.html).
 
-You will also shortly be able to buy PCBs from my store, [Retro Supplies](https://retrosupplies.co.uk).
+A limited edition version of this board with the LinuxJedi logo containing a glowing lightsaber can be found [on Tindie](https://www.tindie.com/products/linuxjedi/amiga-2000-rgb-to-hdmi/).
 
 ## Bracket
 
