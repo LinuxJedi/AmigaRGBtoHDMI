@@ -8,6 +8,19 @@ LinuxJedi's designs for Amiga RGBtoHDMI boards.
 
 If you are a builder of these boards I have designed a tester that safely tests these boards without requiring a Denise or Amiga. This reduces any potential damage and test if you don't have a specific Amiga model. These can be found [on Tindie](https://www.tindie.com/products/linuxjedi/amiga-rgbtohdmi-tester/).
 
+## Choosing a CPLD
+
+I am deliberately vague in which CPLD can be used in the boards here because many variants will work. Given chip shortages in recent years, you might want to pick any chip you can obtain rather than what is normally cheapest. I'll give a breakdown of what the model numbers look like and what to look out for. As an example I'll use `XC9572XL-10VQG44C`:
+
+* `XC9572XL` - This part of the model number is required. Defines the type of logic chip and the number of logic cells. This is what you should search for from your supplier and then use the below to pick the right chip for you.
+* `10` - is the maximum speed grade in ns. 10 is the slowest (cheapest) you can buy. The max speed this board will go is 35ns, so 10ns is plenty.
+* `VQ` - means it is a QFP. You could modify the board to accept the PLCC variant, but that would require you to make some changes in KiCad. The firmware is compatible with both.
+* `G` - means lead-free / RoHS compliant. Without the `G` means the legs have lead.
+* `44` - number of pins. You could in-theory modify the board for more pins in KiCad. This would require a firmware change too, which in-turn means modifying the firmware loader, so I don't recommend it.
+* `C` - Consumer grade (cheapest), if there is an `I` here that means "Industrial grade" (more expensive) and `A` means "Automotive grade" (crazy expensive). This mostly defines the max/min temperature the chip will work at.
+
+My recommendation if you can obtain it, is the XC9572XL-10VQG44C (or without the `G`). But the only important parts are the `XC9572XL`, the `VQ` and the `44`.
+
 ## Projects in This Tree
 
 ### Amiga500CPLD
