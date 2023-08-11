@@ -18,7 +18,7 @@ This adaptor uses a CPLD to pass the RGB and sync signals from the Amiga 500 Den
 | R2         | 4.7K 0603                         |
 | U1         | 48pin DIP socket 2.54mm           |
 | U2         | 2x24pin SILs machined pins 2.54mm |
-| U3         | XC9572XL-10VQG44C                 |
+| U3         | XC9572XL 44pin QFP                |
 
 ### Notes
 

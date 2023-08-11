@@ -19,7 +19,7 @@ Version 2.2 has been changed to make the board smaller. It includes a fuse due t
 | SW1 - SW3    | SKHHLQA010 90° SPST 8.35mm push button       |
 | R1           | 1K 0603                                      |
 | R3           | 4.7K 0603                                    |
-| U1           | XC9572XL-10VQG44C                            |
+| U1           | XC9572XL 44pin QFP                           |
 | F1           | Littlefuse 1206L075THYR                      |
 | D1           | Any 0603 LED                                 |
 | R2           | A 0603 resistor between the LED and +5v line |
